@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-position:inside;
+}
+
+body{
+    background: rgb(244,244,246);
+    /*避免脱离文档流*/
+    padding-top: 44px;
+    padding-bottom: 50px;
+}
+/*第一部分*/
+.DS_header{
+    background: rgb(40,133,202);
+    line-height: 44px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    /*确定位置*/
+    left: 0;
+    top:0;
+    /*加个螺丝钉
+    fixed：固定定位*/
+    position: fixed;
+    /*加宽度进一步完整确定*/
+    width: 100%;
+
+    z-index: 999;
+}
+/*第二部分*/
+.DS_second_section img{
+    width: 100%;
+}
+/*第三部分*/
+/*成行的标签写法：display：table   width根据需求设置*/
+ul{
+    display: table;
+    width: 100%;
+    background: white;
+    height: 100px;
+    margin: 10px;
+}
+/*成列的标签：display：table-cell  width根据需求设置*/
+ul li{
+    display: table-cell;
+    width: 33.3%;
+    text-align: center;
+    vertical-align: middle;
+}
+ul li span{
+    display: block;
+}
+/*第四部分*/
+footer{
+    display: table;
+    width: 100%;
+    background: rgb(40,133,202);
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+footer a{
+    display: table-cell;
+    width: 20%;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+footer a span{
+    display: block;
+    color: white;
+    font-size: 12px;
+}
+footer a img{
+    width: 18px;
+    /*不用设置height，高度会适配*/
+}

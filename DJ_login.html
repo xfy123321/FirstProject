@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>华杉e家</title>
+    <style>
+        body{
+            background: blanchedalmond;
+        }
+        header{
+            width: 100%;
+            text-align: center;
+            margin: 5px;
+        }
+        .DJ_logo{
+            text-align: center;
+        }
+        .DJ_logo img{
+            margin-top: 50px;
+            margin-bottom: 30px;
+            width: 15%;
+        }
+        .DJ_form{
+            margin: 10px;
+            width: 100%;
+            padding: 10px;
+            height: 60px;
+            text-align: center;
+        }
+        input{
+            line-height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 5px;
+            width: 60%;
+            background: transparent;
+        input::-webkit-input-placeholder { /* WebKit browsers */
+            color: red;
+        }
+
+        input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color: red;
+        }
+
+        input::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color: red;
+        }
+
+        input:-ms-input-placeholder { /* Internet Explorer 10+ */
+            color: red;
+        }
+        }
+        button{
+            width: 60%;
+            height: 40px;
+            line-height: 20px;
+            background: dodgerblue;
+            border-radius: 10px;
+            margin: 5px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header><strong>登录</strong></header>
+    <hr>
+
+<div class="DJ_logo">
+    <img src="Resource/icon.png" alt="">
+</div>
+    <form action="">
+        <div class="DJ_form">
+            <input type="number" minlength="18" maxlength="18" placeholder="身份证号码"><br>
+            <input type="password" placeholder="密码">
+            <div class="DJ_form_btn">
+                <button>登录</button>
+            </div>
+        </div>
+
+    </form>
+
+
+</body>
+</html>
